@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{welcome}}</h1>
+        <div id="container">
+            <img :src="picture" :alt="`${fname}${lname}`" class="picture" :class="gender">
+            <h2>{{fname}}&nbsp;{{lname}}</h2>
+            <h3>{{email}}</h3>
+            <h3>{{gender}}</h3>
+            <button @click="getUser()" class="but">Randon User</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
